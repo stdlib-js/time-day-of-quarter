@@ -24,30 +24,38 @@ limitations under the License.
 
 > Determine the day of the quarter.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/time-day-of-quarter
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var dayOfQuarter = require( '@stdlib/time-day-of-quarter' );
+dayOfQuarter = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var dayOfQuarter = require( 'path/to/vendor/umd/time-day-of-quarter/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.dayOfQuarter;
+})();
+</script>
 ```
 
 #### dayOfQuarter( \[month\[, day, year]] )
@@ -96,9 +104,14 @@ var num = dayOfQuarter( new Date() );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var quarterOfYear = require( '@stdlib/time-quarter-of-year' );
-var dayOfQuarter = require( '@stdlib/time-day-of-quarter' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-quarter-of-year@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var months;
 var day;
@@ -130,72 +143,18 @@ for ( i = 0; i < months.length; i++ ) {
     v = dayOfQuarter( months[ i ], day, yr );
     console.log( 'In the year %d, %s %d is day number %d of Q%d.', yr, months[ i ], day, v, q );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use the module as a general utility, install the module globally
-
-```bash
-npm install -g @stdlib/time-day-of-quarter
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: day-of-quarter [options] [<month> <day> <year>]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ day-of-quarter
-<number>
-```
-
-For a specific date,
-
-```bash
-$ day-of-quarter 12 31 2016
-92
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -284,7 +243,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/time/day-of-year]: https://github.com/stdlib-js/time-day-of-year
+[@stdlib/time/day-of-year]: https://github.com/stdlib-js/time-day-of-year/tree/umd
 
 <!-- </related-links> -->
 
