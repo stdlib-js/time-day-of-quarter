@@ -35,126 +35,17 @@ limitations under the License.
 
 > Determine the day of the quarter.
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/time-day-of-quarter
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var dayOfQuarter = require( '@stdlib/time-day-of-quarter' );
-```
-
-#### dayOfQuarter( \[month\[, day, year]] )
-
-Returns the day of the quarter.
-
-```javascript
-var num = dayOfQuarter();
-// returns <number>
-```
-
-By default, the function returns the day of the quarter for the current date (according to local time). To determine the day of the quarter for a particular day, provide `month`, `day`, and `year` arguments.
-
-```javascript
-var num = dayOfQuarter( 12, 31, 2016 );
-// returns 92
-```
-
-A `month` may be either a month's integer value, three letter abbreviation, or full name (case insensitive).
-
-```javascript
-var num = dayOfQuarter( 12, 31, 2016 );
-// returns 92
-
-num = dayOfQuarter( 'dec', 31, 2016 );
-// returns 92
-
-num = dayOfQuarter( 'december', 31, 2016 );
-// returns 92
-```
-
-The function also supports providing a [`Date`][date-object] object.
-
-```javascript
-var num = dayOfQuarter( new Date() );
-// returns <number>
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var quarterOfYear = require( '@stdlib/time-quarter-of-year' );
-var dayOfQuarter = require( '@stdlib/time-day-of-quarter' );
-
-var months;
-var day;
-var yr;
-var q;
-var v;
-var i;
-
-months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-];
-
-yr = 2016;
-day = 9;
-
-for ( i = 0; i < months.length; i++ ) {
-    q = quarterOfYear( months[ i ] );
-    v = dayOfQuarter( months[ i ], day, yr );
-    console.log( 'In the year %d, %s %d is day number %d of Q%d.', yr, months[ i ], day, v, q );
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -172,7 +63,7 @@ npm install -g @stdlib/time-day-of-quarter-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: day-of-quarter [options] [<month> <day> <year>]
@@ -189,7 +80,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ day-of-quarter
@@ -215,10 +106,9 @@ $ day-of-quarter 12 31 2016
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/time-day-of-quarter`][@stdlib/time-day-of-quarter]</span><span class="delimiter">: </span><span class="description">determine the day of the quarter.</span>
 -   <span class="package-name">[`@stdlib/time-day-of-year`][@stdlib/time/day-of-year]</span><span class="delimiter">: </span><span class="description">determine the day of the year.</span>
 
 </section>
@@ -238,7 +128,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -261,8 +151,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/time-day-of-quarter.svg
-[npm-url]: https://npmjs.org/package/@stdlib/time-day-of-quarter
+[npm-image]: http://img.shields.io/npm/v/@stdlib/time-day-of-quarter-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/time-day-of-quarter-cli
 
 [test-image]: https://github.com/stdlib-js/time-day-of-quarter/actions/workflows/test.yml/badge.svg?branch=v0.2.0
 [test-url]: https://github.com/stdlib-js/time-day-of-quarter/actions/workflows/test.yml?query=branch:v0.2.0
