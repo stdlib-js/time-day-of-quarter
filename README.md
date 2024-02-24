@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@deno/mod.js';
+import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@v0.2.1-deno/mod.js';
 ```
 
 #### dayOfQuarter( \[month\[, day, year]] )
@@ -93,7 +93,7 @@ var num = dayOfQuarter( new Date() );
 
 ```javascript
 import quarterOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-quarter-of-year@deno/mod.js';
-import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@deno/mod.js';
+import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@v0.2.1-deno/mod.js';
 
 var months;
 var day;
