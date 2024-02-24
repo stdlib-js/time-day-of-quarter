@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/time-day-of-quarter/tags). For example,
+
+```javascript
 import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@v0.2.1-esm/index.mjs';
 ```
 
@@ -98,7 +103,7 @@ var num = dayOfQuarter( new Date() );
 <script type="module">
 
 import quarterOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-quarter-of-year@esm/index.mjs';
-import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@v0.2.1-esm/index.mjs';
+import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@esm/index.mjs';
 
 var months;
 var day;
