@@ -40,12 +40,12 @@
   "dependencies": {
     "@stdlib/assert-is-date-object": "^0.2.2",
     "@stdlib/assert-is-integer": "^0.2.2",
-    "@stdlib/assert-is-leap-year": "^0.2.1",
+    "@stdlib/assert-is-leap-year": "^0.2.2",
     "@stdlib/assert-is-string": "^0.2.2",
     "@stdlib/cli-ctor": "^0.2.2",
     "@stdlib/fs-read-file": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
-    "@stdlib/time-day-of-year": "^0.2.1",
+    "@stdlib/time-day-of-year": "^0.2.2",
     "@stdlib/time-quarter-of-year": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
@@ -53,7 +53,7 @@
     "@stdlib/assert-is-browser": "^0.2.2",
     "@stdlib/assert-is-windows": "^0.2.2",
     "@stdlib/process-exec-path": "^0.2.2",
-    "@stdlib/string-left-pad": "^0.2.1",
+    "@stdlib/string-left-pad": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
