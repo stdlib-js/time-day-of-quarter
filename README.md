@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/time-day-of-quarter/tags). For example,
+
+```javascript
 import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@v0.2.3-deno/mod.js';
 ```
 
@@ -93,7 +98,7 @@ var num = dayOfQuarter( new Date() );
 
 ```javascript
 import quarterOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-quarter-of-year@deno/mod.js';
-import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@v0.2.3-deno/mod.js';
+import dayOfQuarter from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-quarter@deno/mod.js';
 
 var months;
 var day;
