@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-05-24)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`c17ecc0`](https://github.com/stdlib-js/stdlib/commit/c17ecc0d9992ac6ca249222ed1ecb1ac270ae9bf) - **docs:** use separate `@example` tags in `time/day-of-quarter` [(#12251)](https://github.com/stdlib-js/stdlib/pull/12251) _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-07)
