@@ -1,0 +1,5 @@
+"use strict";var o=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var m=o(function(O,f){
+var d=require('@stdlib/assert-is-date-object/dist'),q=require('@stdlib/assert-is-string/dist').isPrimitive,g=require('@stdlib/assert-is-integer/dist').isPrimitive,v=require('@stdlib/time-day-of-year/dist'),l=require('@stdlib/time-quarter-of-year/dist'),p=require('@stdlib/assert-is-leap-year/dist'),s=require('@stdlib/error-tools-fmtprodmsg/dist'),w=[0,90,181,273],E=[0,91,182,274];function Y(r,e,u){var i,n,a,t;if(arguments.length===0)i=new Date,a=l(i),t=v(i),n=i.getFullYear();else if(arguments.length===1)if(d(r))i=r,a=l(i),t=v(i),n=i.getFullYear();else throw new TypeError(s('1Q7AW',r));else{if(!q(r)&&!g(r))throw new TypeError(s('1Q7AX',r));if(!g(e))throw new TypeError(s('1Q77f',e));if(!g(u))throw new TypeError(s('1Q72z',u));a=l(r),t=v(r,e,u),n=u}return p(n)?t-E[a-1]:t-w[a-1]}f.exports=Y
+});var c=m();module.exports=c;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
