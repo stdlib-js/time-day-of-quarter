@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-24)
+## Unreleased (2026-05-30)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`44d9d99`](https://github.com/stdlib-js/stdlib/commit/44d9d993fbea7b8172dbdf971ee45a7507f2436d) - **docs:** add note concerning generalization [(#12369)](https://github.com/stdlib-js/stdlib/pull/12369) _(by Philipp Burckhardt)_
 -   [`c17ecc0`](https://github.com/stdlib-js/stdlib/commit/c17ecc0d9992ac6ca249222ed1ecb1ac270ae9bf) - **docs:** use separate `@example` tags in `time/day-of-quarter` [(#12251)](https://github.com/stdlib-js/stdlib/pull/12251) _(by Philipp Burckhardt)_
 
 </details>
