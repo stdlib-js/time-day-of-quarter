@@ -1,0 +1,5 @@
+"use strict";var o=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(a){throw (e=0, a)}};};var m=o(function(O,f){
+var d=require('@stdlib/assert-is-date-object/dist'),q=require('@stdlib/assert-is-string/dist').isPrimitive,g=require('@stdlib/assert-is-integer/dist').isPrimitive,v=require('@stdlib/time-day-of-year/dist'),l=require('@stdlib/time-quarter-of-year/dist'),p=require('@stdlib/assert-is-leap-year/dist'),s=require('@stdlib/error-tools-fmtprodmsg/dist'),w=[0,90,181,273],E=[0,91,182,274];function Y(r,e,a){var i,n,t,u;if(arguments.length===0)i=new Date,t=l(i),u=v(i),n=i.getFullYear();else if(arguments.length===1)if(d(r))i=r,t=l(i),u=v(i),n=i.getFullYear();else throw new TypeError(s('1Q7AW',r));else{if(!q(r)&&!g(r))throw new TypeError(s('1Q7AX',r));if(!g(e))throw new TypeError(s('1Q77f',e));if(!g(a))throw new TypeError(s('1Q72z',a));t=l(r),u=v(r,e,a),n=a}return p(n)?u-E[t-1]:u-w[t-1]}f.exports=Y
+});var c=m();module.exports=c;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
